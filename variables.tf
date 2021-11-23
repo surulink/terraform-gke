@@ -1,6 +1,6 @@
 variable "project_id" {
   description = "your_project_id_to_be_entered"
-  default= "my-project-terraform-329615"
+  default= "my-roject-terraform-329615"
 }
 
 variable "region" {
