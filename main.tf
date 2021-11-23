@@ -3,6 +3,7 @@ provider "google" {
   region      = var.region
 }
 
+# Retrieve an access token as the Terraform runner
 module "gke_auth" {
   source = "terraform-google-modules/kubernetes-engine/google//modules/auth"
   depends_on   = [module.gke]
