@@ -13,7 +13,7 @@ module "gke_auth" {
 }
 resource "local_file" "kubeconfig" {
   content  = module.gke_auth.kubeconfig_raw
-  filename = "kubeconfig-${var.env_name}-${timestamp()}"
+  filename = "kubeconfig-${var.env_name}"
 }
 
 module "gcp-network" {
