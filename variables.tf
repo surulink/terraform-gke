@@ -1,6 +1,6 @@
 variable "project_id" {
   description = "your_project_id_to_be_entered"
-  default= "my-roject-terraform-329615"
+  default= "my-project-terraform-329615"
 }
 
 variable "region" {
@@ -10,12 +10,12 @@ variable "region" {
 
 variable "zones" {
   description = "The region to host the cluster in"
-  default     = ["us-central1-a","us-central1-b","us-central1-c"]
+  default     = ["us-central1-a","us-central1-b"]
 }
 
 variable "cluster_name" {
   description = "The name for the GKE cluster"
-  default     = "k8-cluster-demo"
+  default     = "hello-cluster-demo"
 }
 
 variable "env_name" {
