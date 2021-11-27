@@ -117,3 +117,4 @@ resource "google_compute_firewall" "ssh-rule" {
   source_ranges = ["0.0.0.0/0"]
 }
 
+
