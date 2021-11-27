@@ -116,10 +116,5 @@ resource "google_compute_firewall" "ssh-rule" {
   }
   source_ranges = ["0.0.0.0/0"]
 }
-resource "google_compute_project_metadata" "ansible_ssh_key" {
-  project = var.project_id
-  metadata = {
-    ssh-keys = "${var.ssh_user}:${file(var.key_pairs["root_public_key"])}"
-  }
-}
+
 
